@@ -20,7 +20,7 @@ class CounterTest(unittest.TestCase):
     def test_redis_connection(self):
         redis = Redis(host='redis-server', db=0)
         self.app.get('/visit')
-        self.assertEqual(int(redis.get("coutner")), 1)
+        self.assertEqual(int(redis.get("counter")), 1)
 
 if __name__ == "__main__":
     unittest.main()
