@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def welcome():
-    return "<h1> Hello world ! </h1>"
+    return "<h1> Bienvenue à toi jeune entrepreneur </h1>"
 
 @app.route('/visit')
 def counter_incr():
